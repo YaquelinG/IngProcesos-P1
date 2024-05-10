@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Artifact: Especificaci&oacute;n de requerimientos de software</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="especificacion_de_requerimientos_de_software">
+<meta name="uma.presentationName" content="Especificaci&oacute;n de requerimientos de software">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_g21zcAqjEe-pxaG5F_iUiQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Artifact: Especificaci&oacute;n de requerimientos de software</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/artifact.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">La Especificación de requisitos de software (SRS) captura los requisitos de software completos para el sistema o una parte del sistema. Cuando se utiliza el modelado de casos de uso, este artefacto consta de un paquete que contiene casos de uso del modelo de casos de uso y las Especificaciones complementarias aplicables.</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    La Especificación de requisitos de software (SRS) se centra en la recopilación y organización de todos los requisitos
+    que rodean su proyecto. Consulte el Plan de Gestión de Requisitos para determinar la ubicación y organización correcta
+    de los requisitos. Por ejemplo, es posible que desee tener un SRS separado para describir los requisitos de software
+    completos para cada característica en una versión particular del producto. Esto puede incluir varios casos de uso del
+    modelo de casos de uso del sistema , para describir los requisitos funcionales de esta característica, junto con el
+    conjunto relevante de requisitos detallados en Especificaciones complementarias .
+</p>
+<p>
+    La Especificación de requisitos de software se utiliza para recopilar los requisitos de software de su proyecto en un
+    documento formal tipo IEEE 830, representado por una construcción de "paquete" UML.&nbsp;&nbsp; Se proporcionan dos
+    plantillas SRS de muestra:&nbsp;&nbsp; una para usar con modelado de casos de uso (rup_srsuc.dot) y otra para usar sin
+    modelado de casos de uso (rup_srs.dot). El primero (rup_srsuc.dot) hace referencia, o incluye, los artefactos del
+    modelo de caso de uso: la encuesta del modelo de caso de uso , los informes de caso de uso y las especificaciones
+    complementarias . Esto le permite tener un SRS formal compatible con IEEE sin tener que duplicar la información en
+    estos otros 3 artefactos.&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>
+    El segundo (rup_srs.dot) es un documento independiente que contiene todos los requisitos de software directamente en el
+    documento. Este documento requeriría que usted use la trazabilidad de los requisitos de artefactos del caso de uso, si
+    se usan. Técnicamente, ambos contienen la misma información; sin embargo, la información en el modelo de casos de uso
+    está encerrada por referencia (en lugar de duplicada) en el primero y completamente duplicada (si se usan casos de uso)
+    en el segundo, lo que requeriría mucho más esfuerzo. en el mantenimiento de las relaciones de trazabilidad.&nbsp;&nbsp;
+</p>
+<p>
+    Dado que es posible que se encuentre con varias herramientas diferentes para recopilar estos requisitos, es importante
+    darse cuenta de que la colección de requisitos se puede encontrar en varios artefactos y herramientas diferentes. Por
+    ejemplo, puede resultarle apropiado recopilar requisitos textuales, como requisitos no funcionales, restricciones de
+    diseño, etc., con una herramienta de documentación de texto en Especificaciones complementarias . Por otro lado, puede
+    resultarle útil recopilar algunos (o todos) los requisitos funcionales en los casos de uso y puede resultarle útil
+    utilizar una herramienta adecuada a las necesidades de definir el modelo de caso de uso . Por este motivo,
+    recopilaremos los requisitos para nuestro SRS en un paquete que puede ser un documento único o una colección de varios
+    artefactos que describen los requisitos. (Ver: Directrices: Especificación de requisitos de software )
+</p>
+<p>
+    El paquete SRS controla la evolución del sistema durante toda la fase de desarrollo del proyecto, a medida que se
+    agregan o modifican nuevas características al documento de Visión, se elaboran dentro del Paquete SRS. Las siguientes
+    personas utilizan la Especificación de requisitos de software:
+</p>
+<p>
+    El analista de sistemas crea y mantiene la Visión y las Especificaciones Suplementarias , que sirven como entrada para
+    el SRS y son el medio de comunicación entre el analista de sistemas, el cliente y otros desarrolladores.<br />
+    El especificador de requisitos crea y mantiene el caso de uso individual y otros componentes del paquete SRS.<br />
+    Los diseñadores utilizan el paquete SRS como referencia al definir responsabilidades, operaciones y atributos en las
+    clases, y al ajustar las clases al entorno de implementación.<br />
+    Los implementadores consultan el paquete SRS para obtener información al implementar clases.<br />
+    El director del proyecto consulta el paquete SRS para obtener información al planificar iteraciones.<br />
+    Los evaluadores utilizan el paquete SRS para verificar el cumplimiento del sistema.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Responsible:
+								</span></td><td class="sectionTableCell"><span class="sectionTableCellHeading">Modified By:
+								</span>
+<ul>
+<li>
+<a href="./../../plug-in_requerimientos/roles/especificador_de_requerimientos_CBBA9292.html" guid="_z198AAYmEe-L88L2Ltg1Ew">Especificador de requerimientos</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Tasks</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Input To:
+								</span>
+<ul>
+<li>
+<a href="./../../plug-in_requerimientos/tasks/revision_de_requerimientos_A5940A73.html" guid="_1mLjIAYrEe-L88L2Ltg1Ew">Revisi&oacute;n de requerimientos</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Output From:
+								</span>
+<ul>
+<li>
+<a href="./../../plug-in_requerimientos/tasks/detallar_requerimientos_de_software_52333587.html" guid="_M_fL4AYsEe-L88L2Ltg1Ew">Detallar requerimientos de software</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Process Usage</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../plug-in_requerimientos/capabilitypatterns/Gestionar requerimientos cambiantes_D49D0199.html" guid="_c70YkQvFEe-pxaG5F_iUiQ">Gestionar requerimientos cambiantes</a>
+									&nbsp;&gt;&nbsp;
+								<a href="./../../plug-in_requerimientos/workproducts/especificacion_de_requerimientos_de_software_26243B91.html" guid="_g21zcAqjEe-pxaG5F_iUiQ">Especificación de requerimientos de software</a>
+</li>
+<li>
+<a href="./../../plug-in_requerimientos/capabilitypatterns/Refinar la definici&oacute;n del sistema_4AF09280.html">Refinar la definición del sistema</a>
+									&nbsp;&gt;&nbsp;
+								<a href="./../../plug-in_requerimientos/workproducts/especificacion_de_requerimientos_de_software_26243B91.html" guid="_g21zcAqjEe-pxaG5F_iUiQ">Especificación de requerimientos de software</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Main Description</th><td class="sectionTableCell"><p>
+    La Especificación de requisitos de software (SRS) captura los requisitos de software completos para el sistema o una
+    parte del sistema. A continuación se muestra un esquema SRS típico para un proyecto que utiliza modelado de casos de
+    uso . Este artefacto consta de un paquete que contiene casos de uso del modelo de casos de uso y especificaciones
+    complementarias aplicables y otra información de respaldo. Para obtener una plantilla de un SRS que no utiliza el
+    modelado de casos de uso, que captura todos los requisitos en un solo documento, con las secciones aplicables
+    insertadas de las Especificaciones Suplementarias (que ya no serían necesarias), consulte la plantilla HTML para un SRS
+    sin casos de uso. .
+</p>
+<p>
+    Son posibles muchas disposiciones diferentes de un SRS. Consulte [ IEEE830-1998 ] para obtener más información sobre
+    estas explicaciones, así como otras opciones para la organización SRS.
+</p>
+<p>
+    Artefactos adjuntos (informes)<br />
+    Artefacto: modelo de caso de uso ( Informe: encuesta sobre modelo de caso de uso )<br />
+    Artefacto: Caso de uso ( Informe: Caso de uso )<br />
+    Artefacto: Especificaciones suplementarias<br />
+    Momento<br />
+    Las Especificaciones de Requisitos de Software van de la mano con los casos de uso y las Especificaciones
+    Suplementarias , lo que implica que:
+</p>
+<p>
+    Inicialmente se consideran en la fase de inicio , como complemento a la definición del alcance del sistema.<br />
+    Se perfeccionan de forma incremental durante las fases de elaboración y construcción .<br />
+    Responsabilidad<br />
+    Un especificador de requisitos es responsable de producir el paquete de especificación de requisitos de software (SRS),
+    que es un complemento importante del modelo de casos de uso. El paquete SRS recopila especificaciones complementarias
+    aplicables y casos de uso del modelo de casos de uso que, en conjunto, capturan un conjunto completo de requisitos en
+    el sistema o un subsistema definido.
+</p>
+<p>
+    Sastrería<br />
+    Son posibles muchas disposiciones diferentes de un SRS. Consulte [IEEE93] para obtener más información sobre estas
+    explicaciones, así como otras opciones para la organización del SRS.
+</p></td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>
